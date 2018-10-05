@@ -1,0 +1,22 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <%= image_tag 'footer-seagull.png', class: 'footer-image' %>
+        <div class="footer-nav">
+          <a target="_blank" title="cherrytrain.com" href="http://www.cherrytrain.com/">Cherry Train</a> |
+          <a target="_blank" title="washingtonisland-wi.com" href="http://www.washingtonisland-wi.com">Island Chamber</a> |
+          <a target="_blank" href="http://www.doorcounty.com" title="doorcounty.com">Door County Visitor Bureau</a> |
+          <a target="_blank" href="http://dnr.wi.gov/topic/parks/name/rockisland/" title="DNR website">Rock Island State Park</a> |
+          <a target="_blank" href="http://www.ferrycabinnews.blogspot.com/" title="Ferry Cabin News">Ferry Cabin News</a> |
+          <a href="/contact">Contact Us</a>
+        </div>
+                  <% if logged_in? %>
+            <%= link_to "Logout", logout_path %>
+          <% else %>
+            <%= link_to "Admin Login", login_path %>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</footer>

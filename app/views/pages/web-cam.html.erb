@@ -1,0 +1,92 @@
+<% @title = "Webcam of the Ferry Ports" %>
+<% @description = "Washington Island Ferry webcams offer a 24/7 view of our ports. Keep up with happenings on Washington Island and Door County, Wisconsin." %>
+
+<!-- WBAY Retargeting Pixel -->
+<img height="1" width="1" style="border-style:none;" alt="" src="//insight.adsrvr.org/track/evnt/?adv=eqfrxlx&ct=0:ei5bm8a&fmt=3"/>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-intro">
+        <h1>Check Out What’s Happening at Our Ports 24/7...</h1>
+        <h2>From the Tip of Door County’s Peninsula—Visit Washington Island.</h2>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <div class="main-content">
+        <div class="row">
+          <div class="col-md-8">
+            <%= image_tag 'webcams.jpg', :class => 'header-img' %>
+            <p>Get a 24-hour-a-day, 365-day-a-year view of our ferry ports. Check <a href="/weather">weather conditions</a>, watch ferry traffic and appreciate our beautiful port view. These camera views will automatically reload every 60 seconds, but if the image does not refresh automatically, simply hit refresh on your toolbar.</p>
+            <p><a href="/ride-ferry">Start your journey</a> today!</p>
+
+            <div id="webcams">
+              <h2>Northport Ferry Dock Camera #1</h2>
+              <img id="cam1" src="http://insightcreative.info/wisferry-webcam/cam1.jpg" alt="Northport Ferry Dock Camera #1">
+
+              <h2>Northport Ferry Dock Camera #2</h2>
+              <img id="cam2" src="http://insightcreative.info/wisferry-webcam/cam2.jpg" alt="Northport Ferry Dock Camera #2">
+
+              <h2>Detroit Harbor Entrance Camera #3</h2>
+              <img id="cam3" src="http://insightcreative.info/wisferry-webcam/cam3.jpg" alt="Detroit Harbor Entrance Camera #3">
+
+              <h2>Island Ferry Dock Camera #4</h2>
+              <img id="cam4" src="http://insightcreative.info/wisferry-webcam/cam4.jpg" alt="Island Ferry Dock Camera #4">
+            </div>
+          </div>
+
+          <hr class="visible-xs visible-sm">
+
+          <div class="col-md-4" id="test">
+            <h1>An Island for All Seasons</h1>
+            <p>Each ferry has ample deck space with open-air seating. A heated cabin provides shelter in bad weather and in winter. Photo opportunities abound on your trip through Death’s Door, so be sure to bring your still or video camera. Additionally, the island offers a variety of indoor and outdoor activities suitable for warm or cool weather.</p>
+
+            <h2>Spring</h2>
+            <%= image_tag 'schoolhousebeach-lg.jpg' %>
+            <p class="caption">Island beaches provide endless opportunities to explore.</p>
+            <%= image_tag 'stav-kirk-lg.jpg' %>
+            <p class="caption">Island Stavkirke, built in the 1990s, recreates a Norwegian church of the 1100s.</p>
+
+            <h2>Summer</h2>
+            <%= image_tag 'open-air-lg.jpg' %>
+            <p class="caption">Take in the views from our open-air seating areas.</p>
+            <%= image_tag 'farm-museum-lg.jpg' %>
+            <p class="caption">The Washington Island Farm Museum celebrates farming on the island.</p>
+
+            <h2>Autumn</h2>
+            <%= image_tag 'autumn-leaves-lg.jpg' %>
+            <p class="caption">Autumn is a gorgeous time to visit Washington Island.</p>
+            <%= image_tag 'jacobsenmuseum-lg.jpg' %>
+            <p class="caption">The Jacobsen Museum houses a collection of island artifacts.</p>
+
+            <h2>Winter</h2>
+            <%= image_tag 'winter-ferry-lg.jpg' %>
+            <p class="caption">Ferries transit the Death’s Door Passage twice daily during the winter season.</p>
+            <%= image_tag 'late-ice-lg.jpg' %>
+            <p class="caption">Navigating Death’s Door on a sunny winter’s day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= javascript_tag do %>
+
+// This function finds the chosen cameraID and loads the fileName as its source.
+// It also adds the current time to the file name so that the browser sees it as a new request and reloads from the server rather than the cache.
+var setImageSource = function(cameraID, fileName) {
+  var baseURL = "http://insightcreative.info/wisferry-webcam";
+  $(cameraID).attr("src", baseURL + "/" + fileName + "?" + new Date().getTime());
+}
+
+// Every 30 seconds, reset all of the image source links using the setImageSource function, which will force the browser to make a new request
+setInterval(function() {
+  setImageSource("#cam1", "cam1.jpg");
+  setImageSource("#cam2", "cam2.jpg");
+  setImageSource("#cam3", "cam3.jpg");
+  setImageSource("#cam4", "cam4.jpg");
+  console.log("test");
+}, 30000);
+<% end %>

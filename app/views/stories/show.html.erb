@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="main-content col-md-8 center-block">
+
+  <h1><%= @story.title %></h1>
+  <div class="meta">
+    <p><%= @story.created_at.strftime("%B %e, %Y") %> | <% if @story.name? %><%= @story.name %><% else %>Anonymous<% end %><% if @story.city? %>, <%= @story.city %><% end %></p>
+  </div>
+  <% if @story.image.exists? %>
+    <p><%= image_tag @story.image.url %></p>
+  <% end %>
+  <p><%= @story.body %></p>
+  <%= link_to "<< See all stories", "/75th-anniversary" %>
+  <% if logged_in? %>
+  | <%= link_to "delete", story_path(@story), method: :delete, data: {confirm: "Really delete the story?"} %> |
+  <%= link_to "edit", edit_story_path(@story) %>
+  <% end %>
+
+  </div>
+  <div class="col-md-6 center-block">
+    <hr>
+  <%= link_to "Submit your story", "/75th-anniversary", class: "btn btn-default btn-lg btn-block" %>
+  </div>
+</div>

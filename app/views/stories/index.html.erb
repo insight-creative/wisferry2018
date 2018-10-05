@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 page-intro">
+      <h1>Celebrating 75 Years of Island Memories</h1>
+      <h2>Share your Washington Island stories and photos.</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Since 1940, the Washington Island Ferry has provided safe and
+friendly transportation for islanders, Door County residents and visitors. No matter their reason for climbing aboard, each traveler brings a unique perspective and departs with a special story of their journey.</p>
+      <p>In celebration of our 75th anniversary, we invite you all to share those stories of island memories. (Don’t forget to include a favorite photograph, if you have one!) Our crew will read and share your stories with gratitude for your patronage, while looking forward to making even more island memories for generations to come.</p>
+    </div>
+    <div class="col-md-8">
+      <div class="main-content">
+        <div class="row">
+          <%= render partial: 'form' %>
+
+          <% @stories.each do |story| %>
+          <div class="col-md-12">
+            <hr>
+          </div>
+          <div class="col-md-8">
+            <h1><%= link_to story.title, story_path(story) %></h1>
+            <div class="meta">
+              <p><%= story.created_at.strftime("%B %e, %Y") %> | <% if story.name? %><%= story.name %><% else %>Anonymous<% end %><% if story.city? %>, <%= story.city %><% end %></p>
+            </div>
+            <p><%= truncate(story.body, length: 200) %></p>
+            <p><%= link_to "View Story", story_path(story) %></p>
+          </div>
+          <div class="col-md-4">
+            <% if story.image.exists? %>
+              <%= link_to story_path(story) do %>
+                <%= image_tag story.image.url %>
+              <% end %>
+            <% end %>
+          </div>
+          <% end %>
+          <div class="col-md-12">
+            <hr>
+            <%= will_paginate @stories %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

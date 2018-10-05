@@ -1,0 +1,659 @@
+/*
+ * Global
+ */
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  font-size: 1em;
+  line-height: 1.35;
+	background:url(/assets/bg-gradient.jpg) repeat-x #5d9ab2;
+}
+.container {
+  max-width: 980px;
+}
+.center-block {
+  float: none;
+}
+.center-text {
+  text-align: center;
+}
+
+/*
+ * Typography
+ */
+
+p {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+h1 {
+  margin-top: 0px;
+  font-size: 1.4rem;
+  font-family: "museo-slab", serif;
+}
+h2 {
+  font-size: 1.3rem;
+  font-family: "museo-slab", serif;
+}
+a {
+  color: #a6034c;
+}
+ul li,
+ol li {
+  margin-top: 0px;
+  margin-bottom: .75rem;
+}
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #A8A8A8;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 50%;
+}
+.caption {
+  font-size: .75rem;
+  font-style: italic;
+  margin-top: 0px;
+}
+label {
+  font-weight: normal !important;
+}
+.meta {
+  font-size: .75rem;
+}
+.meta p {
+  margin-top: .5rem;
+}
+
+/*
+ * Buttons
+ */
+
+.btn {
+  color: #FFF;
+  border: 0px;
+  box-shadow: 0px 3px 2px #C2C2C2;
+}
+.btn .fa {
+  color: #FFF;
+  font-size: 1.25rem;
+}
+.btn:hover, .btn:focus {
+  color: #FFF;
+}
+.btn-default {
+  background: -webkit-linear-gradient(#4D529C, #182247);
+  background:      -o-linear-gradient(#4D529C, #182247);
+  background:    -moz-linear-gradient(#4D529C, #182247);
+  background:         linear-gradient(#4D529C, #182247);
+}
+.btn-default:hover {
+  background: -webkit-linear-gradient(#182247, #4D529C);
+  background:      -o-linear-gradient(#182247, #4D529C);
+  background:    -moz-linear-gradient(#182247, #4D529C);
+  background:         linear-gradient(#182247, #4D529C);
+}
+.btn-green {
+  background: -webkit-linear-gradient(#11864C, #1B5F23);
+  background:      -o-linear-gradient(#11864C, #1B5F23);
+  background:    -moz-linear-gradient(#11864C, #1B5F23);
+  background:         linear-gradient(#11864C, #1B5F23);
+}
+.btn-green:hover {
+  background: -webkit-linear-gradient(#1B5F23, #11864C);
+  background:      -o-linear-gradient(#1B5F23, #11864C);
+  background:    -moz-linear-gradient(#1B5F23, #11864C);
+  background:         linear-gradient(#1B5F23, #11864C);
+}
+.btn-red {
+  background: -webkit-linear-gradient(#9A0221, #6D000E);
+  background:      -o-linear-gradient(#9A0221, #6D000E);
+  background:    -moz-linear-gradient(#9A0221, #6D000E);
+  background:         linear-gradient(#9A0221, #6D000E);
+}
+.btn-red:hover {
+  background: -webkit-linear-gradient(#6D000E, #9A0221);
+  background:      -o-linear-gradient(#6D000E, #9A0221);
+  background:    -moz-linear-gradient(#6D000E, #9A0221);
+  background:         linear-gradient(#6D000E, #9A0221);
+}
+.btn-link {
+  color: #a6034c;
+}
+.btn-block {
+  width: 100%;
+}
+
+/*
+ * Header
+ */
+
+header {
+  background:url(/assets/header-clouds.jpg) repeat-x;
+}
+.header-right img {
+  max-width: auto;
+  vertical-align: bottom;
+  margin-right: 20px;
+}
+.header-right {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+}
+.navbar-default {
+  border-radius: 0px;
+  border: 0px;
+  margin-top: 50px;
+  border-top: 5px solid #B3C7DE;
+  border-bottom: 5px solid #B3C7DE;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    margin-top: 135px;
+    font-size: .73rem;
+    background: -webkit-linear-gradient(#4D529C, #182247);
+    background: -o-linear-gradient(#4D529C, #182247);
+    background: -moz-linear-gradient(#4D529C, #182247);
+    background: linear-gradient(#4D529C, #182247);
+  }
+}
+.navbar-default .navbar-collapse {
+  border-top: 0px;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:active,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #FFF;
+  background-color: #182247;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav li a:hover,
+  .navbar-default .navbar-nav li a:focus,
+  .navbar-default .navbar-nav li a:active,
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    color: #FFF;
+    background: -webkit-linear-gradient(#182247, #4D529C);
+    background: -o-linear-gradient(#182247, #4D529C);
+    background: -moz-linear-gradient(#182247, #4D529C);
+    background: linear-gradient(#182247, #4D529C);
+  }
+}
+.navbar-default .navbar-nav li {
+  margin-bottom: 0px;
+}
+.navbar-default .navbar-nav li a {
+  color: #4D529C;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-family: "museo-slab", serif;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav li a {
+    color: #FFF;
+  }
+}
+.dropdown-menu {
+  background-color: #C9C7E6;
+}
+.second-dropdown {
+  list-style: none;
+}
+.second-dropdown{
+  padding: 0;
+}
+.second-dropdown a {
+  width:100%;
+  display:inline-block;
+  padding-left:25px !important;
+}
+.second-dropdown a:hover {
+  background: transparent !important;
+  color: #182247 !important;
+  text-decoration: none !important;
+}
+.second-dropdown li a {
+  padding-left: 40px !important;
+}
+@media (min-width: 767px) {
+  .second-dropdown{
+    padding:0;
+    display: block;
+    width:100%;
+    clear:both;
+  }
+  .second-dropdown a{
+    width:100%;
+    display: block;
+    padding-left:7px !important;
+  }
+  .second-dropdown a:hover{
+    color: #000 !important;
+    background: #8896B8 !important;
+  }
+  .second-dropdown li {
+    background:rgb(201,199,230);
+    position: relative;
+    float:left;
+    left:0;
+    min-width:160px;
+    width:100%;
+    display:none;
+  }
+  .second-dropdown div{
+    position: absolute;
+    left:0;
+    width:100%;
+    transform:translate(100%, -36px);
+  }
+  .second-dropdown:hover li{
+    display:block;
+  }
+  .second-dropdown li a {
+    display:block;
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-left:7px !important;
+    padding-right:7px;
+    line-height: 1.42857143;
+    clear:both;
+  }
+
+}
+.navbar-default .dropdown-menu li a {
+  color: #000;
+}
+.navbar-default .dropdown-menu li a:hover,
+.navbar-default .dropdown-menu li a:focus {
+  color: #000;
+  opacity: .8;
+  background: none;
+  background-color: #8896B8;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #182247;
+  }
+}
+.navbar-brand {
+  height: 0px;
+}
+.navbar-brand img {
+  max-width: 210px;
+  margin-top: -55px;
+}
+@media (min-width: 768px) {
+  .navbar-brand img {
+    position: absolute;
+    max-width: 225px;
+    margin-top: -140px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand img {
+    max-width: 275px;
+    margin-top: -135px;
+  }
+}
+.navbar-default .navbar-toggle {
+  font-weight: bold;
+  color: #FFF;
+}
+
+/*
+ * Main Content
+ */
+
+.main-content {
+  background-color: #f3f9fc;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.main-content img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+.main-content .header-img {
+  border: 3px solid #FFF;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .main-content .header-img {
+    position: relative;
+    width: 105%;
+    left: -1rem;
+    top: -2rem;
+  }
+}
+@media (min-width: 980px) {
+  .main-content .header-img {
+    position: relative;
+    top: -2rem;
+    left: -3rem;
+    width: 105%;
+  }
+}
+
+/*
+ * Credit Cards
+ */
+
+.credit-cards .fa {
+  font-size: 2.5rem;
+  color: #7E7E7E;
+}
+
+/*
+ * Social
+ */
+
+.social {
+  list-style: none;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  height: 43px;
+}
+.social li {
+  display: inline-block;
+}
+.social li a {
+  display: block;
+  text-indent: -1000em;
+  height: 37px;
+  background-image: url("/assets/social-media.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 41px;
+}
+.social li a:hover {
+  height: 43px;
+}
+.social #facebook {
+  background-position: 0px top;
+}
+.social #facebook:hover {
+  background-position: 0px bottom;
+}
+.social #youtube {
+  background-position: -81px top;
+  width: 75px;
+}
+.social #youtube {
+  background-position: -81px top;
+  width: 75px;
+}
+.social #youtube:hover {
+  background-position: -81px bottom;
+}
+.social #webcam {
+  background-position: -156px top;
+  width: 75px;
+}
+.social #webcam:hover {
+  background-position: -156px bottom;
+}
+.social #blogger {
+  background-position: -336px top;
+}
+.social #blogger:hover {
+  background-position: -336px bottom;
+}
+.social #instagram {
+  background-position: -376px top;
+}
+.social #instagram:hover {
+  background-position: -376px bottom;
+}
+
+/*
+ * Page intro
+ */
+
+.page-intro {
+  text-align: center;
+}
+.page-intro h1 {
+  font-family: "caflisch-script-pro", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+.page-intro h2 {
+  font-family: "museo-slab", serif;
+  font-size: 1.3rem;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+/*
+ * Card
+ */
+
+.card {
+  border: 2px solid #3B100A;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f3f9fc;
+}
+.card-header {
+  background-color: #C9C7E6;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid #3B100A;
+}
+.card-body {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-footer img {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin: 0px;
+}
+.card h2 {
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*
+ * Form
+ */
+
+form {
+  margin-bottom: 1rem;
+}
+
+/*
+ * Flash notice
+ */
+
+.flash {
+  text-align: center;
+  color: #4D529C;
+  background-color: #FFF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*
+ * Table
+ */
+
+.table {
+  border: 2px solid #043E8E;
+}
+.table-condensed {
+  background-color: #FFF;
+}
+.table-no-border {
+  border: 0px;
+  background-color: #7E7E7E;
+}
+.table-no-border tbody tr td {
+  margin-left: -8px;
+}
+.table th {
+  background-color: #043E8E;
+  color: #FFF;
+}
+.table th h1 {
+  margin-bottom: 0px;
+}
+.table th a {
+  color: #FFF1CF;
+}
+.table th .caption {
+  font-weight: normal;
+}
+.table tr {
+  background-color: #FFF;
+}
+.table td {
+  font-size: .9rem;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #FFF1CF;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #BFE9FD;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: .85rem;
+  background-color: #D2925F;
+  background:url(/assets/footer.png) repeat-x;
+}
+footer a {
+  color: #000;
+  text-decoration: underline;
+}
+.footer-nav {
+  background-color: #efcc93;
+  padding: 5px;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.footer-image {
+  position: absolute;
+  max-width: 240px;
+  top: -100px;
+  left: -80px;
+}
+@media (min-width: 980px) {
+  .footer-image {
+    max-width: 261px;
+    top: -75px;
+  }
+}
+
+/*
+ * Carousel
+ */
+
+.carousel {
+  margin-bottom: 1rem;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
+/* Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x) */
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* Need to override the 3.3 new styles for modern browsers & apply opacity */
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}

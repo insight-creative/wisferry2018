@@ -1,0 +1,89 @@
+<% @title = "Rock Island Ferry" %>
+<% @description = "Get Rock Island and Karfi Ferry information, schedules and rates for trips to Door County's Rock Island in beautiful northeast Wisconsin." %>
+
+<!-- WBAY Retargeting Pixel -->
+<img height="1" width="1" style="border-style:none;" alt="" src="//insight.adsrvr.org/track/evnt/?adv=eqfrxlx&ct=0:ei5bm8a&fmt=3"/>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-intro">
+        <h1>Karfi Ferry to Rock Island</h1>
+        <h2>Rates, Schedule and Ferry Information...</h2>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="main-content">
+        <div class="row">
+          <div class="col-md-8">
+            <%= image_tag 'karfi.jpg', :class => 'header-img' %>
+
+            <h1>Schedules</h1>
+            <h2>Step 1: Ferry to Washington Island</h2>
+            <p>If your journey begins at the tip of Door County’s peninsula, you will first need to take the ferry to Washington Island. Allow yourself a minimum of 1-hour to ride the Washington Island Ferry to Washington Island and then drive across Washington Island to the Karfi Ferry dock.</p>
+
+            <a href="/washington-island-ferry" class="btn btn-default">Washington Island Ferry Schedule</a>
+
+            <h2>Step 2: Karfi Ferry to Rock Island</h2>
+            <p>The below schedule lists times for the Karfi Ferry which travels between Washington Island and Rock Island.</p>
+            <table class="table table-striped">
+              <tr>
+                <th colspan="3">2018 Rock Island Schedule</th>
+              </tr>
+              <tr>
+                <th>Dates</th>
+                <th>Leave Jackson Harbor</th>
+                <th>Leave Rock Island</th>
+              </tr>
+              <tr>
+                <td>May 25 – June 21</td>
+                <td>10:00 AM<br>12:00 PM<br>2:00 PM<br>4:00 PM<br></td>
+                <td>10:15 AM<br>12:15 PM<br>2:15 PM<br>4:15 PM<br></td>
+              </tr>
+              <tr>
+                <td>June 22 – Sept. 3<br><span class="caption">*This trip Friday & Saturday only.</span></td>
+                <td>10:00 AM<br>11:00 AM<br>12:00 PM<br>1:00 PM<br>2:00 PM<br>3:00 PM<br>4:00 PM<br>6:00 PM*</td>
+                <td>10:15 AM<br>11:15 AM<br>12:15 PM<br>1:15 PM<br>2:15 PM<br>3:15 PM<br>4:15 PM<br>6:15 PM*</td>
+              </tr>
+              <tr>
+                <td>Sept. 4 – Oct. 8</td>
+                <td>10:00 AM<br>12:00 PM<br>2:00 PM<br>4:00 PM</td>
+                <td>10:15 AM<br>12:15 PM<br>2:15 PM<br>4:15 PM</td>
+            </table>
+
+            <p class="caption">Our schedule changes throughout the year; please make sure you are looking at the correct season for your visit.</p>
+
+            <div class="visible-xs visible-sm">
+              <hr>
+              <%= render "shared/rock_island_rates" %>
+            </div>
+
+            <hr>
+
+            <h2>Driving Directions</h2>
+            <p>The drive from the Washington Island Ferry Terminal at Detroit Harbor to the Karfi dock at Jackson Harbor follows County Road W across Washington Island about 8.4 miles and should take about 20 minutes. Signs direct you to the Karfi dock. Allow time for parking your car (parking is free!) and unloading before boarding the passengers-only Karfi. Public transportation is not available from Detroit Harbor to the Karfi dock.</p>
+
+            <hr>
+
+            <h2>Please Remember:</h2>
+            <ul>
+              <li>Arrive at the Jackson Harbor dock early in order to unload your gear.</li>
+              <li>Schedule is subject to weather and traffic.</li>
+              <li>Tickets are sold on a first-come-first-served basis.</li>
+              <li>Pets must be on a leash.</li>
+              <li>There is no smoking on board the ferry.</li>
+            </ul>
+
+            <a href="/rock-island-faq" class="btn btn-default btn-lg">Rock Island FAQ</a>
+
+          </div>
+          <div class="col-md-4 hidden-xs hidden-sm">
+            <p>Take a trip out of the ordinary when you visit beautiful Rock Island State Park. This primitive, 912-acre island, situated northeast of Washington Island in Lake Michigan, offers hiking trails, the oldest lighthouse in Wisconsin and miles of beaches. Vehicles are not allowed on the island, making it a unique Wisconsin State Park experience. For your convenience, we’ve answered many common questions here.</p>
+
+            <%= render "shared/rock_island_rates" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

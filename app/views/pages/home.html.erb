@@ -1,0 +1,77 @@
+<% @title = "Door County, Wisconsin" %>
+<% @description = "Get Washington Island Ferry information, schedules and rates for unique ferry trips to Door County's Washington Island in beautiful northeast Wisconsin." %>
+
+<!-- WBAY Retargeting Pixel -->
+<img height="1" width="1" style="border-style:none;" alt="" src="//insight.adsrvr.org/track/evnt/?adv=eqfrxlx&ct=0:ei5bm8a&fmt=3"/>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 center-block">
+          <h1>Washington Island Ferry Schedule</h1>
+          <%= render "shared/search_form" %>
+          <hr>
+        </div>
+        <div class="col-md-12">
+          <div class="page-intro">
+            <h1>Welcome to the Washington Island&nbsp;Ferry</h1>
+            <h2>From the Tip of Door County’s Peninsula—Visit Washington&nbsp;Island...</h2>
+          </div>
+        </div>
+        <div class="col-md-12 hidden-xs">
+          <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <%= image_tag 'hero-ferry4.jpg' %>
+              </div>
+              <div class="item">
+                <%= image_tag 'hero-ferry5.jpg' %>
+              </div>
+              <div class="item">
+                <%= image_tag 'hero-ferry6.jpg' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <a href="/ride-ferry"><h2>Ferry Rates and Schedule &raquo;</h2></a>
+            </div>
+            <div class="card-body">
+              <p>Complete information on rates and a seasonal ferry schedule...</p>
+            </div>
+            <div class="card-footer">
+              <%= image_tag 'bucket-rates-schedule.jpg' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <a href="/rock-island-ferry"><h2>Rock Island State Park</h2></a>
+            </div>
+            <div class="card-body">
+              <p>Learn how to reach Rock Island State Park...</p>
+            </div>
+            <div class="card-footer">
+              <%= image_tag 'bucket-anniversary.jpg' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <a href="/web-cam"><h2>Webcam &raquo;</h2></a>
+            </div>
+            <div class="card-body">
+              <p>Frequently updated views of our mainland and island ports...</p>
+            </div>
+            <div class="card-footer">
+              <%= image_tag 'bucket-webcam.jpg' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

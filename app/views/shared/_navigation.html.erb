@@ -1,0 +1,88 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="social hidden-xs">
+          <li><a id="facebook" target="_blank" href="http://www.facebook.com/pages/Washington-Island-Ferry- Line/129355440437310">Facebook</a></li>
+          <li><a id="instagram" target="_blank" href="https://www.instagram.com/wisferryline/">Instagram</a></li>
+          <li><a id="blogger" target="_blank" href="http://www.ferrycabinnews.blogspot.com/">Blogger</a></li>
+          <li><a id="youtube" target="_blank" href="http://www.youtube.com/user/wisferry">YouTube</a></li>
+          <li><a id="webcam" href="/web-cam/">Webcam</a></li>
+        </ul>
+        <div class="header-right hidden-xs">
+          <a class="small" href="/contact">Contact Us</a>
+          <%= image_tag 'logo-travel-green.png' %>
+            <div style='display:inline-block; width: 120px; background-image: url(http://vortex.accuweather.com/adcbin/netweather_v2/backgrounds/gold_120x60_bg.jpg); background-repeat: no-repeat; background-color: #C39E6E;'>
+            <div id='NetweatherContainer' style='height: 48px;'>
+              <script src='http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&amp;tStyle=whteYell&amp;logo=0&amp;zipcode=54246&amp;lang=eng&amp;size=7&amp;theme=gold&amp;metric=0&amp;target=_self'></script>
+            </div>
+            <div style='text-align: center; font-family: arial, helvetica, verdana, sans-serif; font-size: 10px; line-height: 12px; color: #FFFFFF;'><a style='color: #FFFFFF' href='http://www.accuweather.com/us/wi/washington-island/54246/city-weather-forecast.asp?partner=netweather'>Weather Forecast</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed btn-default" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          Menu
+        </button>
+        <a class="navbar-brand" href="/"><%= image_tag 'washington-island-ferry-logo.png' %></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/washington-island-ferry">Washington Island</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Rock Island <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/rock-island-ferry">Schedule and Pricing</a></li>
+              <li><a href="/rock-island-faq">Rock Island FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="/cherry-train">Cherry Train</a></li>
+          <li class="dropdown">
+            <a href="/about-us" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/about-us">History</a></li>
+              <%# <li><a href="/75th-anniversary">75th Anniversary</a></li> %>
+              <li><a href="/fleet">Fleet</a></li>
+              <li><a href="/web-cam">Webcam</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/plan-trip" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Plan a Trip <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://washingtonisland.com/accommodations/" target="_blank">Lodging</a></li>
+              <li>
+                <ul class="second-dropdown" role="menu">
+                  <a href="/camping" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Camping</a>
+                  <div>
+                    <li><a href="http://dnr.wi.gov/topic/parks/name/rockisland/" target="_blank">Rock Island</a></li>
+                    <li><a href="http://washingtonislandcampground.com/" target="_blank">Washington Island</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li><a href="http://washingtonisland.com/restaurants/" target="_blank">Food</a></li>
+              <li><a href="http://washingtonisland.com/what-to-do/" target="_blank">Activities</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Island Events <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/island-events">Attractions</a></li>
+              <li><a href="/birding">Bird Watching</a></li>
+              <li><a href="/kayak">Kayaking</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>

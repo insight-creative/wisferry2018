@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  <%= render 'shared/head' %>
+
+<body>
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "flash #{key}" %>
+  <% end %>
+
+  <%= render 'shared/navigation' %>
+
+  <%= yield %>
+
+  <%= render 'shared/footer' %>
+  </body>
+</html>

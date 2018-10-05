@@ -1,0 +1,38 @@
+<% if (@ferries) %>
+  <% if (@ferries.empty?) %>
+    <p class="text-center">No results found.</p>
+  <% else %>
+    <% @ferries.first(1).each do |ferry| %>
+    <h1>Schedule for <%= ferry.time.strftime('%A, %B %e, %Y') %></h1>
+    <% if (ferry.time.between?(('September 4, 2015').to_date,('September 8, 2015').to_date)) %>
+    <p><strong>Note:</strong> Additional trips not listed on this schedule will be added during high traffic times over Labor Day Weekend, 9/4/2015 – 9/7/2015.</p>
+    <% end %>
+    <% end %>
+    <div class="row">
+      <div class="col-xs-6">
+        <table class="table text-right table-bordered table-no-border">
+          <tr>
+            <th class="text-center">To Island</th>
+          <tr>
+          <% @ferries.where(location: "To Island").order('time ASC').each do |ferry| %>
+          <tr>
+            <td><%= ferry.time.strftime('%I:%M %p').gsub(/^0/,'') %></td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+      <div class="col-xs-6">
+        <table class="table text-right table-bordered table-no-border">
+          <tr>
+            <th class="text-center">From Island</th>
+          </tr>
+          <% @ferries.where(location: "From Island").order('time ASC').each do |ferry| %>
+          <tr>
+            <td><%= ferry.time.strftime('%I:%M %p').gsub(/^0/,'') %></td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  <% end %>
+<% end %>
